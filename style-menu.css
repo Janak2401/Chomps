@@ -1,11 +1,11 @@
 * {
+  padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
 
 body {
   font-family: 'Merriweather', serif;
-  background-color: white;
+  background-color: #ebf2ff;
 }
 
 /*----Navbar Styling-----------------------------------------------*/
@@ -42,70 +42,17 @@ body {
   border-radius: 8px;
 }
 
-main {
-  margin: 2rem 4rem;
-  font-size: 16px;
+/*----Menu Styling-----------------------------------------------*/
+.menu_container {
+  margin: 2rem auto;
+  max-width: 90%;
+  display: grid;
+  grid-template-columns: 75%;
+  gap: 1em;
+  justify-content: center;
 }
-
-.container {
-  background-color: #ebf2ff;
-  color: #1d3557;
-  padding: 1rem 2rem;
-  border: 1px solid #1d3557;
-  border-radius: 8px;
-}
-.form_container {
-  text-align: left;
-  padding: 1rem;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="number"],
-input[type="password"],
-input[type="date"],
-select,
-textarea {
+.menu_image {
   width: 100%;
-  padding: 12px;
-  border: 2px solid #ccc;
-  border-radius: 5px;
-  margin: 0.25rem 0 0.75rem;
-}
-
-fieldset {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  margin-bottom: 1rem;
-
-}
-
-.main-text {
-  text-align: center;
-}
-
-input[type="submit"] {
-  display: flex;
-  background-color: #4daea1;
-  color: white;
-  font-size: 20px;
-  padding: 10px 0;
-  border:none;
-  border-radius: 4px;
-  cursor: pointer;
-  width: 50%;
-  margin: 0 auto;
-}
-
-input[type="submit"]:hover{
-  background-color: #4caf84;
-}
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 20%;
 }
 
 /*----Footer styling-----------------------------------------------*/
@@ -140,6 +87,10 @@ input[type="submit"]:hover{
     padding-top: 10px;
     padding-right: 20px;
     padding-left: 10px;
+  }
+
+  .menu_container {
+    grid-template-columns: 42% 42%;
   }
 
   .footer {

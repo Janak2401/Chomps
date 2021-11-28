@@ -1,17 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- We want the fonts to load before style.css, so we place them before css link -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
-  <title>Chomps-Card Details</title>
-  <link rel="stylesheet" href="style-payment.css">
+  <link rel="stylesheet" type="text/css" href="style-menu.css">
+  <title>Chomps-Food Menu</title>
 </head>
 
 <body>
@@ -29,26 +27,11 @@
   </header>
 
   <main>
-    <div class="container">
-      <div style="display: flex; justify-content: center; gap: 0.25rem;margin-bottom: 4px;">
-        <img class="center" src="images/rupay.jpg" alt="card image" width="24%" height="60%">
-        <img class="center" src="images/master.png" alt="card image" width="24%" height="60%">
-        <img class="center" src="images/visa.png" alt="card image" width="24%" height="60%">
-      </div>
-      <hr>
-      <h1 class="main-text">Enter the card details</h1>
-      <div style="font-size: 18px;">
-        <p>
-          Card Number: <input type="number" name="Card" id="Card">
-        </p>
-        <p>
-          CVV: <input type="password" name="CVV" id="CVV" cols="80" rows="5" >
-        </p>
-        <p>
-          Valid till: <input type="date" name="date" id="date">
-        </p>
-      </div>
-      <input type="submit" value="Pay Now">
+    <div class="menu_container">
+      <img src="images/menu/menu-1.jpg" class="menu_image">
+      <img src="images/menu/menu-2.jpg" class="menu_image">
+      <img src="images/menu/menu-3.jpg" class="menu_image">
+      <img src="images/menu/menu-4.jpg" class="menu_image">
     </div>
   </main>
 

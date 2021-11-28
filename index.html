@@ -20,7 +20,9 @@
         <img src="assets/logo.png" alt="logo" class="navbar_logo">
       </div>
       <div class="navbar_nav_items">
-        <button class="button_primary">Order Food</button>
+        <button class="nav_button" onclick="document.location='index.html'">Home</button>
+        <button class="nav_button" onclick="document.location='menu.html'">Menu</button>
+        <button class="nav_button" onclick="document.location='contact.html'">Contact Us</button>
       </div>
     </nav>
   </header>
@@ -44,44 +46,47 @@
       <h1 class="explore_menu_text">Explore our menu</h1>
       <div class="explore_menu_list">
 
-        <div class="food_card">
+        <div class="food_card" onclick="document.location='payment-form.html'">
           <div class="food_card_image_container">
             <img src="assets/burger.jpg" alt="burger" class="food_image">
           </div>
           <div class="food_card_description">
-            <h3 class="food_title">Burgers</h3>
-            <p>Burger King, Mcdonalds, Burger Place <span style="color: #ff006e;">+5</span></p>
+            <h3 class="food_title">Chicken Burger</h3>
+            <p style="padding: 2px 0;">Chicken patty, Ponzu Mayo, Napa Cabbage</p>
+            <span style="color: #ff006e;">INR 100</span>
           </div>
         </div>
 
-        <div class="food_card" id="pizza_card">
+        <div class="food_card" id="pizza_card" onclick="document.location='payment-form.html'">
           <div class="food_card_image_container">
             <img src="assets/pizza.jpg" alt="pizza" class="food_image">
           </div>
           <div class="food_card_description">
-            <h3 class="food_title">Pizza</h3>
-            <p>Pizza Hut, Domino's Pizza <span style="color: #ff006e;">+8</span></p>
+            <h3 class="food_title">Pepper Pizza</h3>
+            <p style="padding: 2px 0;">Roast Red Pepper, Ponzu Mayo, Truffle Carpaccio</p>
+            <span style="color: #ff006e;">INR 250</span>
           </div>
         </div>
 
-        <div class="food_card">
+        <div class="food_card" onclick="document.location='payment-form.html'">
           <div class="food_card_image_container">
             <img src="assets/iceCream.jpg" alt="ice cream" class="food_image">
           </div>
           <div class="food_card_description">
-            <h3 class="food_title">Ice Cream</h3>
-            <p>Baskin Robins, Ibaco <span style="color: #ff006e;">+6</span></p>
+            <h3 class="food_title">Caramel Ice Cream</h3>
+            <p style="padding: 2px 0;">Vanilla cream, Meringue topping</p>
+            <span style="color: #ff006e;">INR 50</span>
           </div>
         </div>
       </div>
       <br>
-      <div class="view_more">View More</div>
+      <div class="view_more" onclick="document.location='menu.html'">View More</div>
     </section>
     <br>
     <br>
     <br>
     <section class="promo_container">
-      <div class="promo_text">Order food from hundreds of restaurants!</div>
+      <div class="promo_text">We are available in various cities!</div>
       <div class="promo_image_container">
 
         <div class="restaurant_pair1">
@@ -116,10 +121,8 @@
   <footer class="footer">
     <img src="assets/logo.png" alt="logo" class="footer_logo">
     <div class="footer_text_div">
-      <p>Pricing</p>
       <p>Terms and condition</p>
       <p>Partnership</p>
-      <p>Career</p>
       <p>Contact</p>
     </div>
   </footer>

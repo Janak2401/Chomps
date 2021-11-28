@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- We want the fonts to load before style.css, so we place them before css link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" type="text/css" href="contact.css">
+  <title>Chomps-Contact Us</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="navbar_brand">
+        <img src="assets/logo.png" alt="logo" class="navbar_logo">
+      </div>
+      <div class="navbar_nav_items">
+        <button class="nav_button" onclick="document.location='index.html'">Home</button>
+        <button class="nav_button" onclick="document.location='menu.html'">Menu</button>
+        <button class="nav_button">Contact Us</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="section4">
+      <div class="section4_form">
+        <div class="form_title">
+          We love to hear your feedback and suggestions!
+        </div>
+
+        <form id="myForm">
+          <div class="form-row">
+            <div class="input-data">
+              <input type="text" required>
+              <div class="underline"></div>
+              <label for="">First Name</label>
+            </div>
+            <div class="input-data">
+              <input type="text" required>
+              <div class="underline"></div>
+              <label for="">Last Name</label>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="input-data">
+              <input type="text" required>
+              <div class="underline"></div>
+              <label for="">Email Address</label>
+            </div>
+            <div class="input-data">
+              <input type="tel" required>
+              <div class="underline"></div>
+              <label for="">Phone Number</label>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="input-data textarea">
+              <textarea rows="8" cols="80" required></textarea>
+              <br />
+              <div class="underline"></div>
+              <label for="">Your Suggestions</label>
+              <br />
+              <button class="form_button" onclick="myFunction()">SUBMIT</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <img src="assets/logo.png" alt="logo" class="footer_logo">
+    <div class="footer_text_div">
+      <p>Terms and condition</p>
+      <p>Partnership</p>
+      <p>Contact</p>
+    </div>
+  </footer>
+
+  <script>
+    function myFunction() {
+      document.getElementById("myForm").reset();
+    }
+  </script>
+</body>
+</html>
